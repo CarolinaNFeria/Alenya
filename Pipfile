@@ -10,6 +10,8 @@ flask-migrate = "*"
 flask-cors = "*"
 flask-jwt-extended = "*"
 psycopg2-binary = "*"
+werkzeug = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
