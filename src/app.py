@@ -15,6 +15,8 @@ app.config["JWT_SECRET_KEY"] = "alenya_secret_key"
 CORS(app)
 
 db.init_app(app)
+with app.app_context():
+    db.create_all()
 Migrate(app, db)
 JWTManager(app)
 
